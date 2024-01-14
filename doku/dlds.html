@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Die Liga der Sterblichen</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #2b2b2b;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      background-color: #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: #55ff55;
+    }
+    p {
+      line-height: 1.5;
+      text-align: left;
+    }
+    blockquote {
+      color: #55ff55;
+      border-left: 5px solid #55ff55;
+      padding-left: 10px;
+      text-align: left;
+    }
+    code {
+      background-color: #333;
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .download-section {
+      background-color: #333;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .download-link {
+      display: block;
+      margin: 10px 0;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    .version-heading {
+      color: #55ff55;
+      margin-top: 20px;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #888;
+    }
+    .footer-link {
+      color: #55ff55;
+      text-decoration: none;
+    }
+    .additional-section {
+      background-color: #333;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .additional-link {
+      color: #55ff55;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+    <img alt="Logo" src="./img/logo_dlds.png" width="400px" />
+
+    <nav id="start">
+      <a href="#start">Start</a>
+      <a href="#einrichtung">Einrichtung</a>
+      <a href="#befehle">Übersicht der Befehle</a>
+      <a href="#download">Download</a>
+    </nav>
+
+<p>Dieses Projekt ist eine Nachbildung des Serverplugins von Robert für das Minecraft-Projekt DLDS von PietSmiet. Das Datapack stellt die Grundlagen von DLDS so weit wie möglich nach, das sind:</p>
+
+<ul>
+  <li>Punkte für den jeweiligen Mob</li>
+  <li>Geänderte erst Drops der jeweiligen Mobs</li>
+  <li>Anzeige des aktuellen Punktestands</li>
+  <li>Anzeige über den Fortschritt</li>
+  <li>Start mit Verteilung über die Map</li>
+</ul>
+
+<p>Dazu kommt noch die Möglichkeit eines globalen Scoreboards welches in den Kommentaren und auch hier schon gewünscht wurde. Das Scoreboard ist optional und muss angeschaltet werden. (siehe <a href="#befehle">Übersicht der Befehle</a>)</p>
+
+<blockquote>
+  <p><strong>Hinweis:</strong> Die Funktionen mussten ein wenig abgeändert werden, da Datapacks in den Funktionen limitiert sind.</p>
+</blockquote>
+
+<h2 id="einrichtung">Einrichtung</h2>
+
+<ol>
+  <li>Um DLDS spielen zu können benötigst du das DLDS-Datapack welches du <a href="https://github.com/otti-ai/dlds/releases/latest">hier</a> herunterladen kannst.</li>
+  <li>Erstelle eine neue Welt mit folgenden Einstellungen:</li>
+</ol>
+
+<ul>
+  <li>Spiel -> Cheats erlauben: An (Wird für das Starten und Anzeigen der Punkte benötigt)</li>
+  <li>Mehr -> Datenpakete anklicken: In das neue Fenster zieht ihr via Drag-and-drop das Datapack rein und bestätigt das hinzufügen. Nun sollte das DLDS-Datapack links in der Liste angezeigt werden: <img src="./img/datapack1.JPG" alt="datapack install" /></li>
+</ul>
+
+<p>Nun einmal das Datenpaket anklicken. Es sollte sich jetzt auf die rechte Seite verschieben. Danach die Auswahl mit klick auf Fertig bestätigen.</p>
+
+<li>Nachdem ihr die neue Welt erstellt habt, könnt ihr DLDS mit der Chat Eingabe <code>/function dlds:start</code> starten. Mit <code>/function dlds:punkte</code> könnt ihr euch die Punkte Anzeigen.</li>
+
+<h2 id="befehle">Übersicht der Befehle</h2>
+
+<p>Jeder der folgenden Befehle kann im Chat mit <code>/function</code> gestartet werden und fängt immer mit <code>dlds:</code> an:</p>
+
+<ul>
+  <li><code>dlds:start</code> Mit diesem Befehl startet ihr DLDS und werdet an einem zufälligen Ort in der Welt teleportiert. (Radius 500 Blöcke um den Spawn) <img src="./img/start.jpg" alt="game start" /></li>
+  <li><code>dlds:restart</code> Setzt die Punkte zurück.</li>
+  <li><code>dlds:punkte</code> Zeigt euch eueren aktuellen Punktestand an und den Fortschritt bei den Mobs <img src="./img/punkte.jpg" alt="points" /></li>
+  <li><code>dlds:scoreboard</code> Aktiviert eine Punktetabelle am rechten Bildschirm Rand <img src="./img/scoreboard.jpg" alt="scoreboard" /></li>
+</ul>
+
+<h2 id="download">Download</h2>
+
+<div class="version-heading">Minecraft 1.20.4</div>
+<div class="download-section">
+  <a class="download-link" href="https://github.com/otti-ai/dlds/releases/latest" target="_blank" rel="noopener noreferrer">DLDS-Datapack v1.0 (1.20.4)</a>
+</div>
+
+<h2 id="additional-links">Weitere Links</h2>
+
+<div class="additional-section">
+  <p>Weitere Informationen und Feedback:</p>
+  <ul>
+    <li><a class="additional-link" href="https://github.com/otti-ai/dlds" target="_blank" rel="noopener noreferrer">GitHub-Projekt</a></li>
+    <li><a class="additional-link" href="https://www.reddit.com/r/dlds_feedback/" target="_blank" rel="noopener noreferrer">Reddit-Beitrag für Feedback</a></li>
+    <li><a class="additional-link" href="https://www.youtube.com/playlist?list=PL1lHf5-JX0Vz8i2sCZKj5y3kUo5Ht8av6" target="_blank" rel="noopener noreferrer">YouTube Playlist - PietSmiet DLDS</a></li>
+  </ul>
+</div>
+
+</main>
+
+<footer>
+  © <a class="footer-link" href="https://yannik-ottens.de" target="_blank" rel="noopener noreferrer">Yannik Ottens</a> 2024
+</footer>
+
+</body>
+</html>

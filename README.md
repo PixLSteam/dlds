@@ -1,5 +1,5 @@
 <div style="display:flex;" align="center">
-  <img alt="Logo" src="logo_dlds.png" width="400px" />
+  <img alt="Logo" src="./doku/img/logo_dlds.png" width="400px" />
 </div>
 
 # Die Liga der Sterblichen
