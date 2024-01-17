@@ -28,7 +28,7 @@ Jeder der folgenden Befehle kann im Chat mit `/function` gestartet werden und f�
 - `dlds:start` Mit diesem Befehl startet ihr DLDS und werdet an einem zufälligen Ort in der Welt teleportiert. (Radius 500 Blöcke um den Spawn)
 - ![game start](/docs/img/start.jpg)
 - `dlds:restart` Setzt die Punkte zurück.
-- `dlds:punkte` Zeigt euch eueren aktuellen Punktestand an und den Fortschritt bei den Mobs
+- `dlds:points` Zeigt euch eueren aktuellen Punktestand an und den Fortschritt bei den Mobs
 - ![points](/docs/img/punkte.jpg)
 - `dlds:scoreboard` Aktiviert eine Punktetabelle am rechten Bildschirm Rand
 - ![scoreboard](/docs/img/scoreboard.jpg)

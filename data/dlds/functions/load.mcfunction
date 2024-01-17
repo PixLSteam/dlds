@@ -1,9 +1,9 @@
-scoreboard objectives add score dummy "Punkte" 
+scoreboard objectives add score dummy "Points"
 scoreboard objectives add score_old dummy
 # spiele start
 scoreboard objectives add game_start dummy
 scoreboard objectives add game_start_counter dummy
-# 1 Punkt - 3 Eisenbarren
+# 1 point - 3 iron ingots
 scoreboard objectives add zombie_killed minecraft.killed:minecraft.zombie
 scoreboard objectives add skeleton_killed minecraft.killed:minecraft.skeleton
 scoreboard objectives add creeper_killed minecraft.killed:minecraft.creeper
@@ -11,14 +11,14 @@ scoreboard objectives add spider_killed minecraft.killed:minecraft.spider
 scoreboard objectives add drowned_killed minecraft.killed:minecraft.drowned
 scoreboard objectives add villager_killed minecraft.killed:minecraft.villager
 scoreboard objectives add glow_squid_killed minecraft.killed:minecraft.glow_squid
-# 3 Punkte - 5 Gold
+# 3 points - 5 gold ingots
 scoreboard objectives add zombie_villager_killed minecraft.killed:minecraft.zombie_villager
 scoreboard objectives add husk_killed minecraft.killed:minecraft.husk
 scoreboard objectives add stray_killed minecraft.killed:minecraft.stray
 scoreboard objectives add bat_killed minecraft.killed:minecraft.bat
 scoreboard objectives add bee_killed minecraft.killed:minecraft.bee
 scoreboard objectives add goat_killed minecraft.killed:minecraft.goat
-# 5 Punkte - 1 Diamant
+# 5 points - 1 diamond
 scoreboard objectives add witch_killed minecraft.killed:minecraft.witch
 scoreboard objectives add enderman_killed minecraft.killed:minecraft.enderman
 scoreboard objectives add pillager_killed minecraft.killed:minecraft.pillager
@@ -36,7 +36,7 @@ scoreboard objectives add llama_killed minecraft.killed:minecraft.llama
 scoreboard objectives add strider_killed minecraft.killed:minecraft.strider
 scoreboard objectives add camel_killed minecraft.killed:minecraft.camel
 scoreboard objectives add ocelot_killed minecraft.killed:minecraft.ocelot
-# 10 Punkte - 1 Antiker Schort, 3 Enderperlen
+# 10 points - 1 ancient debris, 3 ender pearls
 scoreboard objectives add ghast_killed minecraft.killed:minecraft.ghast
 scoreboard objectives add piglin_brute_killed minecraft.killed:minecraft.piglin_brute
 scoreboard objectives add slime_killed minecraft.killed:minecraft.slime
@@ -47,22 +47,22 @@ scoreboard objectives add blaze_killed minecraft.killed:minecraft.blaze
 scoreboard objectives add rabbit_killed minecraft.killed:minecraft.rabbit
 scoreboard objectives add pufferfish_killed minecraft.killed:minecraft.pufferfish
 scoreboard objectives add sniffer_killed minecraft.killed:minecraft.sniffer
-# 20 Punkte - 1 einfachen Goldenen Apfel
+# 20 points - 1 golden apple (not enchanted)
 scoreboard objectives add wither_skeleton_killed minecraft.killed:minecraft.wither_skeleton
 scoreboard objectives add guardian_killed minecraft.killed:minecraft.guardian
 scoreboard objectives add vindicator_killed minecraft.killed:minecraft.vindicator
 scoreboard objectives add vex_killed minecraft.killed:minecraft.vex
 scoreboard objectives add skeleton_horse_killed minecraft.killed:minecraft.skeleton_horse
 scoreboard objectives add endermite_killed minecraft.killed:minecraft.endermite
-# 30 Punkte - 1 Totem
+# 30 points - 1 totem of undying
 scoreboard objectives add elder_guardian_killed minecraft.killed:minecraft.elder_guardian
 scoreboard objectives add evoker_killed minecraft.killed:minecraft.evoker
 scoreboard objectives add ravager_killed minecraft.killed:minecraft.ravager
 scoreboard objectives add shulker_killed minecraft.killed:minecraft.shulker
-# 100 Punkte - 5 Traenke der Staerke (8:00)
+# 100 points - 5 potions of strength (8:00)
 scoreboard objectives add ender_dragon_killed minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add wither_killed minecraft.killed:minecraft.wither
 scoreboard objectives add player_killed playerKillCount
 scoreboard objectives add dead deathCount
-# 250 Punkte - 1 Blumentopf
+# 250 points - 1 flower pot
 scoreboard objectives add warden_killed minecraft.killed:minecraft.warden
