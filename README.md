@@ -2,6 +2,9 @@
   <img alt="Logo" src="./docs/img/logo_dlds.png" width="400px" />
 </div>
 
+> [!IMPORTANT]
+> This datapack was made by [otti-ai](https://github.com/otti-ai) (see [original repository](https://github.com/otti-ai/dlds)).
+
 # Die Liga der Sterblichen
 This project is a reconstruction of Robert's server plugin for PietSmiet's Minecraft project DLDS.
 This datapack attempts to recreate the basics of DLDS:
