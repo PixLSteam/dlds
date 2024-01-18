@@ -18,7 +18,7 @@ You can also enable a global scoreboard. It's optional and has to be enabled exp
 
 > Note: The functions had to be changed slightly, since datapacks are limited in their functionality.
 # Setup
-1. To play DLDS you need the DLDS datapack, which you can download [here](https://github.com/otti-ai/dlds/releases/latest).
+1. To play DLDS you need the DLDS datapack, which you can download [here (English)](https://github.com/PixLSteam/dlds/releases/latest) or [here (German)](https://github.com/otti-ai/dlds/releases/latest).
 2. Create a new world with the following settings:
 - Game -> Allow cheats: On (Required for starting and point display)
 - More - Datapacks: Load the DLDS datapack and make sure it's on the right side of the screen. Confirm.
