@@ -11,7 +11,7 @@ This datapack attempts to recreate the basics of DLDS:
 - display of the current progress
 - start with players spread across the map
 
-You can also enable a global scoreboard. It's optional and has to be enabled explicitly (see [Command Overview](#Command Overview))
+You can also enable a global scoreboard. It's optional and has to be enabled explicitly (see [Command Overview](#command-overview))
 
 > Note: The functions had to be changed slightly, since datapacks are limited in their functionality.
 # Setup
