@@ -3,34 +3,31 @@
 </div>
 
 # Die Liga der Sterblichen
-Dieses Projekt ist eine Nachbildung des Serverplugins von Robert für das Minecraft-Projekt DLDS von PietSmiet.
-Das Datapack stellt die Grundlagen von DLDS so weit wie möglich nach, das sind:
-- Punkte für den jeweiligen Mob
-- Geänderte erst Drops der jeweiligen Mobs
-- Anzeige des aktuellen Punktestands
-- Anzeige über den Fortschritt
-- Start mit Verteilung über die Map
+This project is a reconstruction of Robert's server plugin for PietSmiet's Minecraft project DLDS.
+This datapack attempts to recreate the basics of DLDS:
+- points for killing specific mobs for the first ime
+- additional drops based on the value of the killed mob
+- display of the current score
+- display of the current progress
+- start with players spread across the map
 
-Dazu kommt noch die Möglichkeit eines globalen Scoreboard welches in den Kommentaren und auch hier schon gewünscht wurde. Das Scoreboard ist optional und muss angeschaltet werden. (siehe [Übersicht der Befehle](#Übersicht-der-Befehle))
+You can also enable a global scoreboard. It's optional and has to be enabled explicitly (see [Command Overview](#Command Overview))
 
-> Hinweis: Die Funktionen mussten ein wenig abgeändert werden, da Datapacks in den Funktionen limitiert sind.
-
-# Einrichtung
-1. Um DLDS spielen zu können benötigst du das DLDS-Datapack welches du [hier](https://github.com/otti-ai/dlds/releases/latest) herunterladen kannst.
-2. Erstelle eine neue Welt mit folgenden Einstellungen:
-- Spiel -> Cheats erlauben: An (Wird für das Starten und Anzeigen der Punkte benötigt)
-- Mehr -> Datenpakete anklicken: In das neue Fenster zieht ihr via Drag-and-drop das Datapack rein und bestätigt das hinzufügen. Nun sollte das DLDS-Datapack links in der Liste angezeigt werden: ![datapack install](/docs/img/datapack1.JPG)
-Nun einmal das Datenpaket anklicken. Es sollte sich jetzt auf die rechte Seite verschieben. Danach die Auswahl mit klick auf Fertig bestätigen.
-3. Nachdem ihr die neue Welt erstellt habt, könnt ihr DLDS mit der Chat Eingabe `/function dlds:start` starten. Mit `/function dlds:punkte` könnt ihr euch die Punkte Anzeigen.
-
-# Übersicht der Befehle
-Jeder der folgenden Befehle kann im Chat mit `/function` gestartet werden und fängt immer mit `dlds:` an.
-- `dlds:start` Mit diesem Befehl startet ihr DLDS und werdet an einem zufälligen Ort in der Welt teleportiert. (Radius 500 Blöcke um den Spawn)
+> Note: The functions had to be changed slightly, since datapacks are limited in their functionality.
+# Setup
+1. To play DLDS you need the DLDS datapack, which you can download [here](https://github.com/otti-ai/dlds/releases/latest).
+2. Create a new world with the following settings:
+- Game -> Allow cheats: On (Required for starting and point display)
+- More - Datapacks: Load the DLDS datapack and make sure it's on the right side of the screen. Confirm.
+3. After creating the world, you can start DLDS using the command `/function dlds:start`. Use `/function dlds:points` to display your points.
+# Command Overview
+All of the following commands can be executed with `function`. They all start with `dlds:`.
+- `dlds:start` This command starts DLDS and teleports all players to a random location within the world (radius 500 blocks around the world spawn)
 - ![game start](/docs/img/start.jpg)
-- `dlds:restart` Setzt die Punkte zurück.
-- `dlds:points` Zeigt euch eueren aktuellen Punktestand an und den Fortschritt bei den Mobs
+- `dlds:restart` Resets the points.
+- `dlds:points` Shows your current points and which mobs you've already killed
 - ![points](/docs/img/punkte.jpg)
-- `dlds:scoreboard` Aktiviert eine Punktetabelle am rechten Bildschirm Rand
+- `dlds:scoreboard` Activates a scoreboard on the right side of the screen
 - ![scoreboard](/docs/img/scoreboard.jpg)
 
 
