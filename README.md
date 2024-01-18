@@ -21,7 +21,7 @@ You can also enable a global scoreboard. It's optional and has to be enabled exp
 - More - Datapacks: Load the DLDS datapack and make sure it's on the right side of the screen. Confirm.
 3. After creating the world, you can start DLDS using the command `/function dlds:start`. Use `/function dlds:points` to display your points.
 # Command Overview
-All of the following commands can be executed with `function`. They all start with `dlds:`.
+All of the following commands can be executed with `/function`. They all start with `dlds:`.
 - `dlds:start` This command starts DLDS and teleports all players to a random location within the world (radius 500 blocks around the world spawn)
 - ![game start](/docs/img/start.jpg)
 - `dlds:restart` Resets the points.
