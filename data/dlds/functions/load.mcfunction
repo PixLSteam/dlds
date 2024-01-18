@@ -1,6 +1,6 @@
 scoreboard objectives add score dummy "Points"
 scoreboard objectives add score_old dummy
-# spiele start
+# game start
 scoreboard objectives add game_start dummy
 scoreboard objectives add game_start_counter dummy
 # 1 point - 3 iron ingots

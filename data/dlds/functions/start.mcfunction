@@ -6,5 +6,5 @@ effect give @a minecraft:saturation 1 255 true
 time set day
 spreadplayers 0 0 200 500 true @s
 title @a times 20 100 20
-title @a title {"text":"DLDS startet in","color":"aqua"}
+title @a title {"text":"DLDS starts in","color":"aqua"}
 clear @a

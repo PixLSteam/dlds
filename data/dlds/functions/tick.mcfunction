@@ -1,4 +1,4 @@
-# 1 Punkt - 3 Eisenbarren
+# 1 point - 3 iron ingots
 # zombie
 execute as @a[scores={zombie_killed=1}] as @s run scoreboard players add @s score 1
 execute as @a[scores={zombie_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+1","color":"green"}'
@@ -28,7 +28,7 @@ execute as @a[scores={glow_squid_killed=1}] as @s run scoreboard players add @s 
 execute as @a[scores={glow_squid_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+1","color":"green"}'
 execute as @a[scores={glow_squid_killed=1}] as @s run scoreboard players add @s glow_squid_killed 1
 
-# 3 Punkte - 5 Gold
+# 3 points - 5 gold ingots
 # zombie_villager_killed 
 execute as @a[scores={zombie_villager_killed=1}] as @s run scoreboard players add @s score 3
 execute as @a[scores={zombie_villager_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+3","color":"green"}'
@@ -54,7 +54,7 @@ execute as @a[scores={goat_killed=1}] as @s run scoreboard players add @s score 
 execute as @a[scores={goat_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+3","color":"green"}'
 execute as @a[scores={goat_killed=1}] as @s run scoreboard players add @s goat_killed 1
 
-# 5 Punkte - 1 Diamant
+# 5 points - 1 diamond
 # witch_killed
 execute as @a[scores={witch_killed=1}] as @s run scoreboard players add @s score 5
 execute as @a[scores={witch_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+5","color":"green"}'
@@ -124,7 +124,7 @@ execute as @a[scores={ocelot_killed=1}] as @s run scoreboard players add @s scor
 execute as @a[scores={ocelot_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+5","color":"green"}'
 execute as @a[scores={ocelot_killed=1}] as @s run scoreboard players add @s ocelot_killed 1
 
-# 10 Punkte - 1 Antiker Schort, 3 Enderperlen
+# 10 points - 1 ancient debris, 3 ender pearls
 #  ghast_killed 
 execute as @a[scores={ghast_killed=1}] as @s run scoreboard players add @s score 10
 execute as @a[scores={ghast_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+10","color":"green"}'
@@ -166,7 +166,7 @@ execute as @a[scores={sniffer_killed=1}] as @s run scoreboard players add @s sco
 execute as @a[scores={sniffer_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+10","color":"green"}'
 execute as @a[scores={sniffer_killed=1}] as @s run scoreboard players add @s sniffer_killed 1
 
-# 20 Punkte - 1 einfachen Goldenen Apfel
+# 20 points - 1 golden apple (not enchanted)
 #  wither_skeleton_killed
 execute as @a[scores={wither_skeleton_killed=1}] as @s run scoreboard players add @s score 20
 execute as @a[scores={wither_skeleton_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+20","color":"green"}'
@@ -192,7 +192,7 @@ execute as @a[scores={endermite_killed=1}] as @s run scoreboard players add @s s
 execute as @a[scores={endermite_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+20","color":"green"}'
 execute as @a[scores={endermite_killed=1}] as @s run scoreboard players add @s endermite_killed 1
 
-# 30 Punkte - 1 Totem
+# 30 points - 1 totem of undying
 #  elder_guardian_killed 
 execute as @a[scores={elder_guardian_killed=1}] as @s run scoreboard players add @s score 30
 execute as @a[scores={elder_guardian_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+30","color":"green"}'
@@ -210,7 +210,7 @@ execute as @a[scores={shulker_killed=1}] as @s run scoreboard players add @s sco
 execute as @a[scores={shulker_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+30","color":"green"}'
 execute as @a[scores={shulker_killed=1}] as @s run scoreboard players add @s shulker_killed 1
 
-# 100 Punkte - 5 Traenke der Staerke (8:00)
+# 100 points - 5 potions of strength (8:00)
 #  ender_dragon_killed 
 execute as @a[scores={ender_dragon_killed=1}] as @s run scoreboard players add @s score 100
 execute as @a[scores={ender_dragon_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+100","color":"green"}'
@@ -226,18 +226,18 @@ execute as @a[scores={player_killed=1}] as @s run scoreboard players add @s play
 execute at @a[scores={dead=1}] run summon item ~ ~ ~ {Item:{id:"minecraft:potion",Count:5b,tag:{Potion: "minecraft:long_strength"}}} 
 execute at @a[scores={dead=1}] run scoreboard players set @a[scores={dead=1}] dead 2
 
-# 250 Punkte - 1 Blumentopf
+# 250 points - 1 flower pot
 #  warden_killed
 execute as @a[scores={warden_killed=1}] as @s run scoreboard players add @s score 250
 execute as @a[scores={warden_killed=1}] as @s run data modify storage minecraft:new_points Message set value '{"text":"+250","color":"green"}'
 execute as @a[scores={warden_killed=1}] as @s run scoreboard players add @s warden_killed 1
 
-# sound abspielen bei punkte aenderung
-execute as @a if score @s score > @s score_old run title @s actionbar [{"nbt":"Message","storage":"minecraft:new_points","interpret":true},{"text":" Punkte","color":"aqua"}]
+# play sound on score change
+execute as @a if score @s score > @s score_old run title @s actionbar [{"nbt":"Message","storage":"minecraft:new_points","interpret":true},{"text":" Points","color":"aqua"}]
 execute as @a if score @s score > @s score_old run playsound minecraft:block.note_block.chime neutral @s ~ ~ ~ 
 execute as @a if score @s score > @s score_old run scoreboard players operation @s score_old = @s score
 
-#spiel start
+#game start
 execute as @a if score @s game_start matches 1 as @s run scoreboard players add @s game_start_counter 1
 execute as @a if score @s game_start_counter matches 1 run title @a subtitle {"text":"5","color":"gold"}
 execute as @a if score @s game_start_counter matches 1 run playsound minecraft:block.note_block.bit block @a ~ ~ ~ 100 1
@@ -251,6 +251,6 @@ execute as @a if score @s game_start_counter matches 81 run title @a subtitle {"
 execute as @a if score @s game_start_counter matches 81 run playsound minecraft:block.note_block.bit block @a ~ ~ ~ 100 1.8
 execute as @a if score @s game_start_counter matches 101 run title @a subtitle {"text":"","color":"gold"}
 execute as @a if score @s game_start_counter matches 101 run playsound minecraft:block.note_block.bit block @a ~ ~ ~ 100 2
-execute as @a if score @s game_start_counter matches 101 run title @a title {"text":"Los!","color":"green"}
+execute as @a if score @s game_start_counter matches 101 run title @a title {"text":"Go!","color":"green"}
 execute as @a if score @s game_start_counter matches 121 run title @a title {"text":"","color":"green"}
 execute as @a if score @s game_start_counter matches 121 as @s run scoreboard players set @a game_start 0
